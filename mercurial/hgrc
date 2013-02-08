@@ -8,18 +8,21 @@
 #
 
 [ui]
-username = **Your Name** <**Your Email**>
-merge = internal:merge
-
+username = Jason Ziglar <jpz@rec.ri.cmu.edu>
+merge = meld
+editor = vim
+ignore = ~/.hgignore
 [extensions]
 graphlog =
-mq =
+eol =
 color =
 rebase =
-transplant =
 record =
 progress =
+histedit =
 # extdiff =
+hgshelve = /home/jpz/jsf/hgshelve/hgshelve.py
+onsub = /home/jpz/jsf/onsub/onsub.py
 
 [hooks]
 changegroup = hg diff --stat -r $HG_NODE -r tip
@@ -27,9 +30,6 @@ changegroup = hg diff --stat -r $HG_NODE -r tip
 [alias]
 slog = log --template '{rev}:{node|short} {desc|firstline}\n'
 show = log --color=always -pr
-
-[web]
-cacerts = ~/.mercurial/ssl/certs/ca-certificates.crt
 
 [diff]
 git = True
@@ -44,3 +44,15 @@ incoming = --style compact -v
 heads = --template '{rev}:{node|short}({branches}) {desc|firstline}\n'
 qseries = -s
 
+[patch]
+eol = LF
+
+[tortoisehg]
+authorcolor = True
+postpull = rebase
+ui.language = en
+vdiff = meld
+tabwidth = 2
+
+[eol]
+native = LF
