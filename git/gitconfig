@@ -9,8 +9,8 @@
 
 # Global Config
 [user]
-  name = "**Your Name**"
-  email = "**Your Email**"
+  name = "Jason Ziglar"
+  email = "jpz@rec.ri.cmu.edu"
   #signingkey = **Your GPG ID**
 
 [branch "master"]
@@ -120,4 +120,6 @@
   rea = remote add
   rex = remote rm
   rem = remote rename
+
+  up = pull --rebase
 
