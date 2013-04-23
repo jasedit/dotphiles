@@ -24,4 +24,108 @@ if has("user_commands")
 endif
 
 " Customize to your needs...
+set nocompatible
 
+" allow backspacing over everything in insert mode
+set backspace=indent,eol,start
+
+set autoindent		" always set autoindenting on
+
+if has("vms")
+  set nobackup		" do not keep a backup file, use versions instead
+else
+  set backup		" keep a backup file
+endif
+set history=50		" keep 50 lines of command line history
+set ruler		" show the cursor position all the time
+set showcmd		" display incomplete commands
+set incsearch		" do incremental searching
+
+" Don't use Ex mode, use Q for formatting
+map Q gq
+
+" Switch syntax highlighting on, when the terminal has colors
+" Also switch on highlighting the last used search pattern.
+if &t_Co > 2 || has("gui_running")
+  syntax on
+  set hlsearch
+endif
+
+filetype plugin indent on
+" Only do this part when compiled with support for autocommands.
+if has("autocmd")
+
+  " Enable file type detection.
+  " Use the default filetype settings, so that mail gets 'tw' set to 72,
+  " 'cindent' is on in C files, etc.
+  " Also load indent files, to automatically do language-dependent indenting.
+
+  " For all text files set 'textwidth' to 78 characters.
+  autocmd FileType text setlocal textwidth=100
+
+  " When editing a file, always jump to the last known cursor position.
+  " Don't do it when the position is invalid or when inside an event handler
+  " (happens when dropping a file on gvim).
+  autocmd BufReadPost *
+    \ if line("'\"") > 0 && line("'\"") <= line("$") |
+    \   exe "normal g`\"" |
+    \ endif
+
+  autocmd BufNewFile,BufRead *.md set wrap
+  autocmd BufNewFile,BufRead *.md set linebreak
+endif " has("autocmd")
+
+set visualbell
+set nowrap
+set showmode
+
+set hidden
+
+set noerrorbells
+
+" use 2 spaces when using autoindent/cindent
+set shiftwidth=2
+
+" use the same value as shiftwidth
+set softtabstop=2
+
+" use the standard 2 character positions for a TAB
+set tabstop=2
+
+set expandtab
+
+set dir=~/vim/tmp
+set bdir=~/vim/tmp
+
+abbreviate cuot cout
+abbreviate cotu cout
+
+abbreviate enld endl
+abbreviate elnd endl
+
+hi Statement ctermfg=darkred
+
+hi WhiteSpaceEOL ctermbg=red
+match WhiteSpaceEOL /\s\+\%#\@!$/
+
+set guifont=Consolas\ 12
+
+set nocp
+
+filetype on
+filetype indent on
+filetype plugin on
+set cindent
+" set statusline=%<%f\%h%m%r%=%-20.(line=%l\ \ col=%c%V\ \ totlin=%L%)\ \ \%h%m%r%=%-40(bytval=0x%B,%n%Y%)\%P
+
+set fileformats=unix
+
+" 'quote' a word
+nnoremap qw :silent! normal mpea'<Esc>bi'<Esc>`pl
+" double "quote" a word
+nnoremap qd :silent! normal mpea"<Esc>bi"<Esc>`pl
+" remove quotes from a word
+nnoremap wq :silent! normal mpeld bhd `ph<CR>
+nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
+
+au BufNewFile,BufRead wscript* set filetype=python

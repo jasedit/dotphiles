@@ -2,3 +2,4 @@ alias update-aliases="wget -q -O - \"$@\" https://alias.sh/user/1370/alias >> ~/
 
 source ~/.aliassh
 alias dotsync='~/.dotfiles/dotsync/bin/dotsync'
+alias tdt='~/Dropbox/todo.txt/todo.sh'
