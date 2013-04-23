@@ -1,0 +1,4 @@
+alias update-aliases="wget -q -O - \"$@\" https://alias.sh/user/1370/alias >> ~/.aliassh"
+
+source ~/.aliassh
+alias dotsync='~/.dotfiles/dotsync/bin/dotsync'

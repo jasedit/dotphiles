@@ -18,6 +18,8 @@
 [files]
 # Uncomment examples below
 dotsyncrc
+bash/bash_aliases
+base/todo_completion
 #ack/ackrc
 #bin:bin
 #ctags/ctags

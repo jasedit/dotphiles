@@ -20,6 +20,7 @@ rebase =
 record =
 progress =
 histedit =
+purge =
 # extdiff =
 hgshelve = /home/jpz/jsf/hgshelve/hgshelve.py
 onsub = /home/jpz/jsf/onsub/onsub.py
@@ -53,6 +54,7 @@ postpull = rebase
 ui.language = en
 vdiff = meld
 tabwidth = 2
+editor = gedit
 
 [eol]
 native = LF
