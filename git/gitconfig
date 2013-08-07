@@ -10,7 +10,7 @@
 # Global Config
 [user]
   name = "Jason Ziglar"
-  email = "jpz@rec.ri.cmu.edu"
+  email = "jpz@vt.edu"
   #signingkey = **Your GPG ID**
 
 [branch "master"]
