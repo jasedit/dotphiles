@@ -128,3 +128,5 @@
 
 [merge]
 	tool = meld
+[push]
+	default = simple
