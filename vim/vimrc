@@ -94,8 +94,8 @@ set tabstop=2
 
 set expandtab
 
-set dir=~/vim/tmp
-set bdir=~/vim/tmp
+set dir=~/.vim/tmp
+set bdir=~/.vim/tmp
 
 abbreviate cuot cout
 abbreviate cotu cout
