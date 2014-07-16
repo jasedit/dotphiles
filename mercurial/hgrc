@@ -23,8 +23,8 @@ progress =
 #histedit =
 purge =
 # extdiff =
-hgshelve = /home/jpz/jsf/hgshelve/hgshelve.py
-onsub = /home/jpz/jsf/onsub/onsub.py
+hgshelve = /home/jpz/.jsf/hgshelve/hgshelve.py
+onsub = /home/jpz/.jsf/onsub/onsub.py
 
 [hooks]
 changegroup = hg diff --stat -r $HG_NODE -r tip
