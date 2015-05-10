@@ -141,7 +141,7 @@
     rem = remote rename
 
 [push]
-    default = matching
+    default = simple
 
 [url "git@github.com:"]
     insteadof = github:
@@ -160,5 +160,3 @@
 	helper = cache --timeout=3600
 [fetch]
   prune = true
-[pull]
-  rebase = preserve
