@@ -38,10 +38,13 @@ git/gitconfig
 #irssi
 mercurial/hgrc
 mercurial/hgignore
+#mpd/mpd.conf
 #mutt
 #mutt/muttrc
 #mutt/offlineimaprc
 #mysql/my.cnf
+#ncmpcpp/config
+#ncmpcpp/error.log
 #postgresql/psqlrc
 #python/pythonrc
 #python/pylintrc
