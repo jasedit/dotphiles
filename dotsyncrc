@@ -73,6 +73,11 @@ vim/vimrc
 #zsh/zprofile
 #zsh/zshenv
 #zsh/zshrc
+st3/cbc.sublime-snippet:.config/sublime-text-3/Packages/User/cbc.sublime-snippet
+st3/cheader.sublime-snippet:.config/sublime-text-3/Packages/User/cheader.sublime-snippet
+st3/cimpl.sublime-snippet:.config/sublime-text-3/Packages/User/cimpl.sublime-snippet
+st3/Preferences.sublime-settings:.config/sublime-text-3/Packages/User/Preferences.sublime-settings
+st3/Monokai\ \(SL\).tmTheme:.config/sublime-text-3/Packages/User/Monokai\ \(SL\).tmTheme
 [endfiles]
 
 # Hosts to sync
