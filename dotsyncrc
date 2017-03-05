@@ -38,10 +38,13 @@ git/gitconfig
 #irssi
 mercurial/hgrc
 mercurial/hgignore
+#mpd/mpd.conf
 #mutt
 #mutt/muttrc
 #mutt/offlineimaprc
 #mysql/my.cnf
+#ncmpcpp/config
+#ncmpcpp/error.log
 #postgresql/psqlrc
 #python/pythonrc
 #python/pylintrc
@@ -73,6 +76,11 @@ vim/vimrc
 #zsh/zprofile
 #zsh/zshenv
 #zsh/zshrc
+st3/cbc.sublime-snippet:.config/sublime-text-3/Packages/User/cbc.sublime-snippet
+st3/cheader.sublime-snippet:.config/sublime-text-3/Packages/User/cheader.sublime-snippet
+st3/cimpl.sublime-snippet:.config/sublime-text-3/Packages/User/cimpl.sublime-snippet
+st3/Preferences.sublime-settings:.config/sublime-text-3/Packages/User/Preferences.sublime-settings
+st3/Monokai.tmTheme:.config/sublime-text-3/Packages/User/Monokai.tmTheme
 [endfiles]
 
 # Hosts to sync
@@ -84,6 +92,7 @@ vim/vimrc
 #host4.example.com               git=host5.example.com                                  #git repo, pull from host5
 beast               git=NONE                                               #git repo, local only
 ubuntu		git=NONE
+deadpool               git=NONE                                               #git repo, local only
 #host6.example.net               rsync=host1.example.com                                #rsync mirror, push from host1
 #host7.example.net               rsync=host2.example.com                                #rsync mirror, push from host2
 #host8.example.net               rsync=host2.example.com                                #rsync mirror, push from host2

@@ -1,0 +1,29 @@
+<snippet>
+  <content><![CDATA[
+/**
+ * ${1:Description}
+ * \author ${2:author}
+ * \date ${3:year}/${4:month}/${5:day}
+ */
+#ifndef ${TM_FILENAME/\./_/g}__
+#define ${TM_FILENAME/\./_/g}__
+
+/**
+ * ${1:Description}
+ */
+class ${6:Class}
+{
+public:
+  ${6:Class}();
+  ${6:Class}(const ${6:Class)& rhs});
+  ~${6:Class}();
+
+  ${6:Class}& operator=(const ${6:Class}& rhs);
+};
+#endif
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+<tabTrigger>cheader</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.c++</scope>
+</snippet>

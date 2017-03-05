@@ -1,0 +1,16 @@
+<snippet>
+  <content><![CDATA[
+/**
+ * ${1:Description}
+ * \author ${2:name}
+ * \date ${3:year}/${4:month}/${5:day}
+ */
+#include "${TM_FILENAME/\.cpp/.h/}"
+
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+<tabTrigger>cimpl</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.c++</scope>
+</snippet>
