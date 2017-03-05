@@ -10,7 +10,7 @@
 # Global Config
 [user]
   name = "Jason Ziglar"
-  email = "jpz@vt.edu"
+  email = "jasedit@gmail.com"
   #signingkey = **Your GPG ID**
 
 [branch "master"]
@@ -47,6 +47,7 @@
   pager = less -FRSX
   whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
   editor=vim
+  ignorecase=true
 
 [alias]
   # branch
@@ -136,3 +137,15 @@
 	default = simple
 [credential]
 	helper = cache --timeout=3600
+[filter "media"]
+	required = true
+	clean = git media clean %f
+	smudge = git media smudge %f
+[filter "hawser"]
+	clean = git hawser clean %f
+	smudge = git hawser smudge %f
+	required = true
+[filter "lfs"]
+	clean = git lfs clean %f
+	smudge = git lfs smudge %f
+	required = true
